@@ -11,10 +11,30 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header class="header">
-    <div class="container header__inner"></div>
-  </header>
+    <header class="header">
+        <div class="container header__inner">
+            <a class="logo" href="#home" aria-label="Cuman.kz">
+            <img src="https://www.cuman.kz/static/images/svg/logo_cuman_nav.svg" alt="Cuman">
+            </a>
 
+            <nav class="nav" id="nav">
+            <a href="#home">Главная</a>
+            <a href="#service">Сервис</a>
+            <a href="#features">Преимущества</a>
+            <a href="#catalog">Каталог</a>
+            <a href="#steps">Как работает</a>
+            <a href="#contacts">Контакты</a>
+            </nav>
+
+            <a class="header__button" href="#contacts">Оставить заявку</a>
+
+            <button class="burger" type="button" aria-label="Открыть меню" aria-controls="nav" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+            </button>
+        </div>
+    </header>
   <main>
     <section class="hero" id="home"></section>
 
