@@ -407,3 +407,93 @@ textarea {
 .accordion__content.is-open {
   display: block;
 }
+
+.contacts {
+  background: var(--blue);
+}
+
+.contacts__inner {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.contacts__text a {
+  display: block;
+  width: fit-content;
+  margin-top: 14px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.form {
+  display: grid;
+  gap: 18px;
+  padding: 34px;
+  border-radius: var(--radius);
+  background: var(--white);
+  color: #222;
+}
+
+.form label {
+  display: grid;
+  gap: 8px;
+  font-weight: 700;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  border: 1px solid #d7d7d7;
+  border-radius: var(--radius);
+  padding: 15px 16px;
+  outline: none;
+}
+
+.form textarea {
+  min-height: 128px;
+  resize: vertical;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-color: var(--green);
+}
+
+.form__status {
+  min-height: 24px;
+  margin: 0;
+  color: var(--green);
+  font-weight: 800;
+}
+
+.footer {
+  background: var(--green);
+  color: var(--white);
+  padding: 44px 0;
+}
+
+.footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer img {
+  width: 150px;
+  margin-bottom: 18px;
+}
+
+.footer p {
+  margin: 0;
+  font-weight: 700;
+}
+
+.footer__links {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  font-weight: 700;
+}

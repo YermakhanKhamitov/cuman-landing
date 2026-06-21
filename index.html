@@ -164,11 +164,49 @@
             </div>
         </div>
     </section>
-    <section class="contacts section" id="contacts"></section>
+    <section class="contacts section" id="contacts">
+        <div class="container contacts__inner">
+            <div class="contacts__text reveal">
+            <p class="section-label">Контакты</p>
+            <h2>Оставьте заявку через Cuman.kz</h2>
+            <p>Менеджер сможет уточнить вопрос по продукции, услугам или сервисному обслуживанию.</p>
+            <a href="tel:+70000000000">+7 000 000 00 00</a>
+            <a href="mailto:example@mail.com">example@mail.com</a>
+            </div>
+
+            <form class="form reveal">
+            <label>
+                Имя
+                <input type="text" name="name" placeholder="Ваше имя" required>
+            </label>
+            <label>
+                Телефон
+                <input type="tel" name="phone" placeholder="+7 ___ ___ __ __" required>
+            </label>
+            <label>
+                Сообщение
+                <textarea name="message" placeholder="Что вас интересует?" required></textarea>
+            </label>
+            <button class="button button--green" type="submit">Отправить</button>
+            <p class="form__status"></p>
+            </form>
+        </div>
+    </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer__inner"></div>
+    <div class="container footer__inner">
+        <div>
+        <img src="https://www.cuman.kz/static/images/svg/logo_cuman_nav.svg" alt="Cuman">
+        <p>© Cuman.kz, 2026</p>
+        </div>
+        <div class="footer__links">
+        <a href="#home">Главная</a>
+        <a href="#catalog">Каталог</a>
+        <a href="#service">Сервис</a>
+        <a href="#contacts">Контакты</a>
+        </div>
+    </div>
   </footer>
 
   <script src="assets/js/script.js"></script>
