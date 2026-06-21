@@ -177,3 +177,58 @@ textarea {
 .burger.is-active span:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
 }
+
+.hero {
+  min-height: calc(100vh - 92px);
+  display: flex;
+  align-items: center;
+  background: radial-gradient(circle at 70% 20%, rgba(120, 185, 30, 0.2), transparent 32%), linear-gradient(90deg, rgba(0, 0, 0, 0.96), rgba(0, 0, 0, 0.56)), var(--black);
+  overflow: hidden;
+}
+
+.hero__inner {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 50px;
+}
+
+.hero__content h1 {
+  margin: 0 0 24px;
+  font-family: "Manrope", Arial, sans-serif;
+  font-size: clamp(34px, 4.2vw, 58px);
+  line-height: 1.14;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.hero__content p {
+  max-width: 620px;
+  margin: 0 0 28px;
+  color: var(--gray);
+  font-size: 18px;
+  line-height: 1.75;
+  font-weight: 400;
+}
+
+.hero__image img {
+  width: 100%;
+  max-height: 640px;
+  object-fit: contain;
+  filter: drop-shadow(0 32px 50px rgba(0, 0, 0, 0.6));
+}
+
+.section-label {
+  margin: 0 0 16px;
+  color: var(--green);
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
